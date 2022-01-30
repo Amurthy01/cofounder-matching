@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
+import { NavLink } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -7,7 +8,9 @@ export default function Header() {
       <SearchSearchBar>
         <TopBarBg></TopBarBg>
       </SearchSearchBar>
-      <CoFounderMatch>CoFounder Match</CoFounderMatch>
+      <NavLink to="/">
+        <CoFounderMatch>CoFounder Match</CoFounderMatch>
+      </NavLink>
       <Rectangle1 xmlns="http://www.w3.org/2000/svg">
         <path
           fill="rgba(46, 46, 46, 1)"
@@ -24,7 +27,9 @@ export default function Header() {
         <LogIn>Log In</LogIn>
       </button>
       <button>
-        <SignUp>Sign Up</SignUp>
+        <NavLink to="/profile">
+          <SignUp>Sign Up</SignUp>
+        </NavLink>
       </button>
     </RootWrapperGroup5>
   );

@@ -6,12 +6,22 @@ import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
 import Header from "./components/header";
 import Hero from "./components/hero";
-import Gradient from "./components/gradientImage";
+import Profile from "./components/profile";
+import Matching from "./components/matching";
+import CoFounder from "./components/cofounder";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Header />
-    <Hero />
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Hero />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/matching" element={<Matching />} />
+        <Route path="/cofounder" element={<CoFounder />} />
+      </Routes>
+    </Router>
   </React.StrictMode>,
   document.getElementById("root")
 );
