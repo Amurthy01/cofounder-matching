@@ -40,12 +40,15 @@ def signup(request):
         bio = request.POST.get('bio')
         role = request.POST.get('role')
         skills = request.POST.get('skills')
-        interests = request.POST.get('skills')
+        interests = request.POST.get('interests')
         instagram = request.POST.get('instagram')
         twitter = request.POST.get('twitter')
         linkedin = request.POST.get('linkedin')
         company = request.POST.get('company')
         portfolio = request.POST.get('portfolio')
+        
+        
+        user = new User()
 class ReactView(APIView):
     serializer_class = ReactSerializer
     def get(self, request):
@@ -58,3 +61,8 @@ class ReactView(APIView):
         if serializer.is_valid(raise_exception=True):
             serializer.save()
             return Response(serializer.data)
+
+def signup(request):
+    if (request.method == "POST"):
+        name = request.POST.get('first_name')
+        email = request.POST.get('email')
