@@ -4,10 +4,14 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.css";
+import Header from "./components/header";
+import Hero from "./components/hero";
+import Gradient from "./components/gradientImage";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Header />
+    <Hero />
   </React.StrictMode>,
   document.getElementById("root")
 );
