@@ -8,32 +8,28 @@ import Buttons from "./buttons.png";
 export default function Group13() {
   return (
     <RootWrapperGroup13>
-      <Group>
-        <Bio>Bio</Bio>
-        <Skills>Skills</Skills>
-        <Interests>Interests</Interests>
-        <Text1>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Senectus
-          aliquam urna ultricies eu eleifend ac at. Nisi, amet nisi venenatis
-          pulvinar aenean nec mauris. Dolor tortor aliquam, pulvinar tristique
-          vitae. Non velit a nibh convallis sed accumsan tellus dictumst
-          integer.
-        </Text1>
-        <Text2>
-          Blockchain, AI, Machine Learning, FinTech, Dao, SaaS, Analytic
-          Software
-        </Text2>
-        <Align>
-          <Rectangle8></Rectangle8>
-          <Rectangle9></Rectangle9>
-          <Rectangle10></Rectangle10>
-          <Rectangle11></Rectangle11>
-          <AdobeXd>Adobe XD 🎨</AdobeXd>
-          <ReactJs>React JS ‍💻</ReactJs>
-          <Javascript>Javascript ⚡️</Javascript>
-          <NodeJs>Node.JS 🌎</NodeJs>
-        </Align>
-      </Group>
+      <Bio>Bio</Bio>
+      <Skills>Skills</Skills>
+      <Interests>Interests</Interests>
+      <Text1>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Senectus
+        aliquam urna ultricies eu eleifend ac at. Nisi, amet nisi venenatis
+        pulvinar aenean nec mauris. Dolor tortor aliquam, pulvinar tristique
+        vitae. Non velit a nibh convallis sed accumsan tellus dictumst integer.
+      </Text1>
+      <Text2>
+        Blockchain, AI, Machine Learning, FinTech, Dao, SaaS, Analytic Software
+      </Text2>
+      <Align>
+        <Rectangle8></Rectangle8>
+        <Rectangle9></Rectangle9>
+        <Rectangle10></Rectangle10>
+        <Rectangle11></Rectangle11>
+        <AdobeXd>Adobe XD 🎨</AdobeXd>
+        <ReactJs>React JS ‍💻</ReactJs>
+        <Javascript>Javascript ⚡️</Javascript>
+        <NodeJs>Node.JS 🌎</NodeJs>
+      </Align>
       <Button>
         <img src={Buttons} width="400px" height="100px" />
       </Button>
@@ -61,7 +57,7 @@ const Image = styled.div`
 
 const Button = styled.div`
   position: relative;
-  bottom: 100px;
+  bottom: 150px;
   left: 1000px;
 `;
 
@@ -70,16 +66,10 @@ const Align = styled.div`
   top: 50px;
 `;
 
-const Group = styled.div`
-  padding-bottom: 0px;
-  margin-bottom: ;
-`;
-
 const Image2 = styled.div`
   position: relative;
-  left: 0px;
   padding-bottom: 30px;
-  bottom: 900px;
+  bottom: 980px;
 `;
 
 const Bio = styled.span`
